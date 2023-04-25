@@ -1,0 +1,99 @@
+*, *::before, *::after {
+box-sizing: border-box; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* Style the header */
+header {
+    background-color: #05013d;
+    color: #ffffff;
+  }
+  
+  #alltimeScores a {
+    color: #e10909;
+    text-decoration: none;
+  }
+  
+  /* Style the welcome section */
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+   }
+
+   body{
+    background-color:#259a85
+   }
+  
+  h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 5rem;
+    
+
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color:#05013d;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  /* Style the quiz section */
+  #quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #questions {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #choices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .choice {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* Style the results section */
+  #results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #outcome {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+ 
+  
+  
+  

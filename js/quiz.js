@@ -1,9 +1,12 @@
 // Variables set globally
-
 var startQuiz = document.getElementById("startQuiz")
+var saveScore = document.getElementById("saveScore")
+var viewScores = document.getElementById("viewScores")
+var playAgain = document.getElementById("playAgain")
 
 var welcome = document.getElementById("welcome")
 var quiz = document.getElementById("quiz")
+var results = document.getElementById("results")
 
 
 var choices = document.getElementById("choices")
@@ -37,6 +40,8 @@ countdownTimer = setInterval()
 
 
 
+
+
 }
 
 
@@ -47,7 +52,7 @@ countdownTimer = setInterval()
 
 
 
-// This section helps display quiz questions
+// This section helps display quiz questions: Need to increment on questions
 function displayQuestion() {
 
 
@@ -68,4 +73,6 @@ function stopQuiz() {
 }
 
 startQuiz.addEventListener("click" , onStartQuiz);
+saveScore.addEventListener("click" , onSaveScore)
+viewScores.addEventListener("click" , onviewScores)
 playAgain.addEventListener("click" , onStartQuiz);

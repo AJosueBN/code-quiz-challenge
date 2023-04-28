@@ -3,6 +3,10 @@ box-sizing: border-box;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+body{
+  background-color:#259a85
+ }
+
 /* Style the header */
 header {
     background-color: #05013d;
@@ -24,9 +28,6 @@ header {
     width: 100vw;
    }
 
-   body{
-    background-color:#259a85
-   }
   
   h1 {
     font-size: 2rem;
@@ -36,7 +37,7 @@ header {
 
   }
   
-  .button {
+  /*.button {
     display: inline-block;
     padding: 1rem 2rem;
     background-color:#05013d;
@@ -44,7 +45,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     margin-top: 1rem;
-  }
+  } */
   
   /* Style the quiz section */
   #quiz {
@@ -67,14 +68,10 @@ header {
     margin-bottom: 1rem;
   }
   
-  .choice {
-    padding: 1rem;
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
+
   
   /* Style the results section */
-  #results {
+ /* #results {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,9 +88,15 @@ header {
     
     padding: 1rem;
     margin-bottom: 2rem;
-  }
+  }*/
 
+  .hidden{
+    display:none;
+  }
  
+  .show{
+    display: block;
+  }
   
   
   

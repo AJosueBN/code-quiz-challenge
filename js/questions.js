@@ -2,34 +2,44 @@
 var questions = [
     {
       title: 'Commonly used data types DO NOT include:',
-      options: ['strings', 'booleans', 'alerts', 'numbers'],
+      option1: 'strings', 
+      option2:'booleans', 
+      option3:'alerts', 
+      option4:'numbers',
       answer: 'alerts',
     },
     {
       title: 'Where is the correct place to insert a JavaScript?',
-      options: ['Both the <head> and <body section>', 'Just the <body> section', 'Just the <head> section'],
-      answer: 'Both the <head> and <body section>',
+      option1:'Both the <head> and <body section>', 
+      option2:'Just the <body> section', 
+      option3:'Just the <head> section',
+      option4:'Wherever it is convenient',
+      answer: 'Both the <head> and the <body> section',
     },
     {
       title: 'Arrays in JavaScript can be used to store ____.',
-      options: [
-        'numbers and strings',
-        'other arrays',
-        'booleans',
-        'all of the above',
-      ],
+      option1:'numbers and strings',
+        option2:'other arrays',
+        option3:'booleans',
+        option4:'all of the above',
       answer: 'all of the above',
     },
     {
       title:
         'Which event occurs when the user clicks on an HTML element?',
-      options: ['onclick', 'onmouseover', 'onchange', 'onmouseclick'],
+      option1:'onclick', 
+      option2:'onmouseover', 
+      option3:'onchange', 
+      option4:'onmouseclick',
       answer: 'onclick',
     },
     {
       title:
         'A very useful tool used during development and debugging for printing content to the debugger is:',
-      options: ['JavaScript', 'terminal / bash', 'for loops', 'console.log'],
+      option1:'JavaScript', 
+      option2:'terminal / bash',
+      option3: 'for loops', 
+      option4:'console.log',
       answer: 'console.log',
     },
   ];

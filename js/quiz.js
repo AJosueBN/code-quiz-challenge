@@ -1,6 +1,7 @@
 // Variables set globally
+
 // major buttons info
-var startBtn=document.querySelector('#startQuiz')
+var startBtn = document.querySelector('#startQuiz')
 var saveScore = document.getElementById("saveScore")
 var viewScores = document.getElementById("viewScores")
 var playAgain = document.getElementById("playAgain")
@@ -86,7 +87,7 @@ finalscore=score
 console.log(finalscore)
 }
 
-
+// Saves scores after quiz has completed
 function onSaveScore(){
     var initials= inputEL.value
     console.log(initials);

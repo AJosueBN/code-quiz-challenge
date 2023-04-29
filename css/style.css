@@ -49,7 +49,7 @@ header {
   
   /* Style the quiz section */
   #quiz {
-    display: flex;
+    display: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;

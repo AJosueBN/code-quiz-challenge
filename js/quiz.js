@@ -108,9 +108,11 @@ function onSaveScore(){
    
 
 }
-function onviewScores(){
+function onviewScores() {
     window.location.assign("scores.html")
 }
+
+
 
 startBtn.addEventListener("click" , onStartQuiz);
 choices.addEventListener("click", ()=>{
@@ -118,9 +120,27 @@ choices.addEventListener("click", ()=>{
         console.log(clicked);
         selectAnswer(clicked)
 })
+
+playAgain.addEventListener("click", function(){
+    results.classList.replace("show", "hidden");
+    startQuiz.classList.remove('hidden');
+    score = 0;
+    currentQuestion = 0;
+    secondsLeft = 60;
+    results.classList.replace("show", "hidden");
+    quiz.classList.replace("hidden", "show");
+    
+    onStartQuiz();
+  
+});
+
+
+
+
+
+
 saveScore.addEventListener("click" , onSaveScore)
 viewScores.addEventListener("click" , onviewScores)
-playAgain.addEventListener("click" , onStartQuiz);
 
 
 //on the fucntion onSaveScore you create and object with the user initialsvaule that you will grab from the input and the final score

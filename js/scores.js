@@ -10,7 +10,7 @@
 //so to do the textcontet it has to be varname(from the top where you get item).initials +  varname(from the top where you get item).score
 
 var scoresheet = document.getElementById("scoresheet")
-var playAgain = document.getElementById("playAgain")
+var backtoQuiz = document.getElementById("returntoQuiz")
 
 function onReturnToQuiz() {
      window.location.href = 'index.html';
@@ -31,5 +31,5 @@ for(var i = 0; i < localStorage.length; i++) {
 
 }
 
-playAgain.addEventListener("click" , onStartQuiz);
+backtoQuiz.addEventListener("click" , onReturnToQuiz);
 

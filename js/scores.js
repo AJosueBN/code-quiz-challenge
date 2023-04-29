@@ -8,3 +8,28 @@
 
 //remeber that what you are retriveing is an object
 //so to do the textcontet it has to be varname(from the top where you get item).initials +  varname(from the top where you get item).score
+
+var scoresheet = document.getElementById("scoresheet")
+var playAgain = document.getElementById("playAgain")
+
+function onReturnToQuiz() {
+     window.location.href = 'index.html';
+}
+
+for(var i = 0; i < localStorage.length; i++) {
+    
+    var initials = localStorage.key(i);
+    var score = localStorage.getItem(initials);
+
+    var results = document.createElement("div");
+    results.classList.add('results');
+
+    results.innerHTML = '<div class="player-Item">$(initials)</div> <div class="score-Item">$(score)</div>'
+
+                       
+    scoresheet.appendChild(results);
+
+}
+
+playAgain.addEventListener("click" , onStartQuiz);
+

@@ -85,6 +85,7 @@ quiz.style.display="none"
 results.classList.replace("hidden", "show")
 finalscore=score
 console.log(finalscore)
+outcome.textContent = 'Your Score: ' + score + '/5';
 }
 
 // Saves scores after quiz has completed

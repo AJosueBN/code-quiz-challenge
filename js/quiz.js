@@ -67,14 +67,26 @@ function selectAnswer(userChoice) {
     if(userChoice ===questions[currentQuestion].answer){
         score++
         currentQuestion++
+         
+        displayMessage('Correct!')
         onStartQuiz()
     }else{
         secondsLeft-=5
         currentQuestion++
+        
+        displayMessage('Wrong!')
         onStartQuiz()
     }
 
+}
 
+function displayMessage(msg) {
+    
+    message.textContent = msg
+
+    setTimeout(function () {
+        message.textContent = " ";
+    },1000);
 
 }
 
@@ -121,7 +133,7 @@ choices.addEventListener("click", ()=>{
         selectAnswer(clicked)
 })
 
-playAgain.addEventListener("click", function(){
+playAgain.addEventListener("click", function() {
     results.classList.replace("show", "hidden");
     startQuiz.classList.remove('hidden');
     score = 0;

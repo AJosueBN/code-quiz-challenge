@@ -10,11 +10,11 @@ var questions = [
     },
     {
       title: 'Where is the correct place to insert a JavaScript?',
-      option1:'Both the <head> and <body section>', 
+      option1:'Both the <head> and <body> section', 
       option2:'Just the <body> section', 
       option3:'Just the <head> section',
       option4:'Wherever it is convenient',
-      answer: 'Both the <head> and the <body> section',
+      answer: 'Both the <head> and <body> section',
     },
     {
       title: 'Arrays in JavaScript can be used to store ____.',

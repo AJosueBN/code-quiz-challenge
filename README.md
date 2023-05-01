@@ -1,4 +1,4 @@
-# week-four-code-quiz-challenge Making a quiz based solely mainly on JavaScript fundamentals and the things that could be implemented in terms of creating a quiz page are timers and local storage so the user can look back at their scores after the quiz has ended.
+# week-four-code-quiz-challenge Making a quiz based solely mainly on JavaScript fundamentals and the things that could be implemented in terms of creating a quiz page with a timer and installing local storage so the user can look back at their scores after the quiz has ended.
 
 # Things I have added/implemented in the task of making a quiz through code :
 
@@ -7,6 +7,7 @@
 - Added buttons and called them options so the user has a choice of answers to choose from
 - Allocated functions once you try to save your score by parsing and stringfying elements(JSON) and then pushing it to the local object through local storage which will then save the name and the score they have got from the quiz through the form of arrays.
 Added function to displayMessage to let user know whether they got the question right or wrong.
+- Added timer to let user know how much time they have on the quiz
 - Added local storage iteration so that the players initials(nicknames) and the score they got in the quiz are saved and can be looked at in the scores.html page after the quiz has been completed.
 
 

@@ -7,7 +7,7 @@
 - Added buttons and called them options so the user has a choice of answers to choose from
 - Allocated functions once you try to save your score by parsing and stringfying elements(JSON) and then pushing it to the local object through local storage which will then save the name and the score they have got from the quiz through the form of arrays.
 Added function to displayMessage to let user know whether they got the question right or wrong.
-- Added local storage iteration so that the players initials(nicknames) and the score they got in the quiz are saved and can be looked at in the scores.html page
+- Added local storage iteration so that the players initials(nicknames) and the score they got in the quiz are saved and can be looked at in the scores.html page after the quiz has been completed.
 
 
 

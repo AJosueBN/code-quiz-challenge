@@ -72,7 +72,7 @@ function selectAnswer(userChoice) {
         score++
         currentQuestion++
          
-        correctSound.play
+        correctSound.play();
         displayMessage('Correct!')
         onStartQuiz()
     }else{

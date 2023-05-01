@@ -64,16 +64,22 @@ countdownTimer = setInterval(function(){
 
 // This section helps user to select answer 
 function selectAnswer(userChoice) {
+    var correctSound = new Audio("sound/correct.wav");
+    var incorrectSound = new Audio("sound/incorrect.wav");
+
+
     if(userChoice ===questions[currentQuestion].answer){
         score++
         currentQuestion++
          
+        correctSound.play
         displayMessage('Correct!')
         onStartQuiz()
     }else{
         secondsLeft-=5
         currentQuestion++
         
+        incorrectSound.play();
         displayMessage('Wrong!')
         onStartQuiz()
     }
@@ -133,6 +139,8 @@ choices.addEventListener("click", ()=>{
         selectAnswer(clicked)
 })
 
+
+// Play again button
 playAgain.addEventListener("click", function() {
     results.classList.replace("show", "hidden");
     startQuiz.classList.remove('hidden');
@@ -155,6 +163,6 @@ saveScore.addEventListener("click" , onSaveScore)
 viewScores.addEventListener("click" , onviewScores)
 
 
-//on the fucntion onSaveScore you create and object with the user initialsvaule that you will grab from the input and the final score
-// you will push this object into an arry that you create
+//on the function onSaveScore you create and object with the user initialsvaule that you will grab from the input and the final score
+// Pushed object into an array that has been created
 //and you will set item on local storage by sending the array.
